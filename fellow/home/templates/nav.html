@@ -1,0 +1,16 @@
+{% load static %}
+
+<nav>
+    <div class="logo">
+        <img src="{% static 'images/sudo_logo.png' %}" alt="" srcset="">
+    </div>
+
+    <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{%url 'getServices' %}">Get services</a></li>
+        <li><a href="{% url 'offerServices' %}">Offer services</a></li>
+        <li>|</li>
+        <li><a href="{% url 'index' %}">Ts & Cs</a></li>
+        <li><a href="{% url 'index' %}">Contact us</a></li>
+    </ul>
+</nav>

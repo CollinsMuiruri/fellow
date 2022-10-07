@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&family=Rubik:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    /* margin-top: -100px; */
+}
+
+.signup {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 100px;
+    left: 0;
+}
+
+.signup img {
+    height: 99.5vh;
+    width: 40vw;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
+.right {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.signup-form h2 {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.signup-form h3 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.signup-form p {
+    font-weight: 300;
+    font-size: 17px;
+    width: 550px;
+    margin-bottom: 30px;
+}
+
+.signup-form label {
+    font-size: 15px;
+    margin-bottom: -15px;
+}
+
+.signup-form #fname,
+#lname,
+#email,
+#number,
+#pass,
+#cpass {
+    font-size: 20px;
+    height: 35px;
+    width: 300px;
+    padding: 20px 10px 20px 10px;
+    border: 2px solid #4353ff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.signup-form .line {
+    display: flex;
+}
+
+.signup-form .mgroup {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.signup-form .rgroup {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.checkboxes {
+    display: block;
+    margin-top: 20px;
+    align-items: left;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.checkboxes a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4353ff;
+}
+
+.checkboxes a:hover {
+    color: cyan;
+    transition: .3s;
+}
+
+button {
+    padding: 20px;
+    background-color: #4353ff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: cyan;
+    transition: .3s;
+    color: black;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4353ff;
+}
