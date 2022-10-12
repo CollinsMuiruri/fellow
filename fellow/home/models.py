@@ -74,3 +74,11 @@ class SellerProfile(models.Model):
 def create_user_profile(sender, instance, created, **kwargs):
     if created and instance.role == 'SELLER':
         SellerProfile.objects.create(user=instance)
+
+class Job(models.Model):
+    name = models.CharField(max_length = 50, null=False)
+    job_buyer = models.ManyToManyField(BuyerProfile, blank=True)
+    job_seller = models.ManyToManyField(SellerProfile, blank=True)
+
+    def __string__(self):
+        return self.name
